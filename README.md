@@ -102,6 +102,20 @@ Image processing and OCR service:
 
 **Technologies**: TypeScript, Express.js, Google Cloud Vision, Azure Computer Vision, Sharp, Cloudflare Workers
 
+### my-coding-agents (Open Source)
+An educational project demonstrating the evolution of AI coding assistants from simple to complex:
+- **4 progressive versions** (v0-v4) showing 16,703% code growth journey (33 → 5,546 lines)
+- **Modular architecture** with event-driven design and sub-agent delegation system
+- **15 tools** including file operations, search, system commands, conversation management, and delegation
+- **Intelligent conversation compression** with 40-60% token reduction in long conversations
+- **Sub-agent delegation** with 4 specialized agent types and restricted tool sets
+- **Comprehensive testing** with 960+ lines of test coverage
+- **Complete documentation** showing architecture evolution and best practices
+- Demonstrates DDD principles, tool system design, and production-ready patterns
+
+**Technologies**: Python 3.7+, OpenRouter API, DeepSeek v3.2, Modular OOP Architecture
+
+
 ## 🎯 Core Competencies
 
 - **System Design**: Designing scalable microservices with proper separation of concerns
