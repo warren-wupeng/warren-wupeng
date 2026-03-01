@@ -145,7 +145,7 @@ TypeScript/JavaScript SDK for Trickle Backend APIs:
 ## 🔗 Links
 
 - GitHub: [@warren-wupeng](https://github.com/warren-wupeng)
-- Personal site: [about-me terminal](https://about-2xzap1qb1-warren-wupengs-projects.vercel.app)
+- Personal site: [about-me terminal](https://github.com/warren-wupeng/about-me)
 
 ---
 
