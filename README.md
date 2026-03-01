@@ -1,8 +1,23 @@
 # Warren Wu (吴鹏)
 
+## 2026 Highlights
+
+- **HappyCapy** — AI-native sandbox platform: shipped in **19 days**, **10,000 sandboxes** provisioned, **55 annual subscribers at $2,000/yr**
+- **Data Analysis Agent MVP** — natural language to SQL for enterprise data platforms, built in **5 days** on the side; [live demo](https://data-analysis-agent-warren.fly.dev/)
+- **build-my-own-coding-agent** — **5 versions** (V0→V5), **33 → 9,266 lines**, sub-agent delegation lifted task success rate from **60% → 85%**, conversation compression saves **40-60% tokens**; [open source](https://github.com/warren-wupeng/build-my-own-coding-agent)
+- **3,700+** GitHub contributions in the past year
+
+---
+
 ## 👋 About Me
 
-I'm a full-stack engineer passionate about building scalable, maintainable systems with modern architecture patterns. I specialize in Python backend development, TypeScript/JavaScript SDK development, and AI-powered automation systems. My work focuses on domain-driven design, event-driven architectures, and creating developer-friendly tools.
+I'm a full-stack engineer and product builder who has been among the first to ship at every AI inflection point:
+
+- **2023** — ChatGPT wave → AI chatbot & RAG apps
+- **2024** — Claude Sonnet 3.5 → Vibe Coding tool (websites for non-developers)
+- **2026** — Agent era → HappyCapy + Data Analysis Agent MVP
+
+I specialize in Python backend development, TypeScript/JavaScript SDK development, and AI-powered Agent systems. My work focuses on domain-driven design, event-driven architectures, and building production-grade AI products.
 
 ## 🛠️ Tech Stack
 
@@ -15,7 +30,7 @@ I'm a full-stack engineer passionate about building scalable, maintainable syste
 - **Logging**: Loguru, Winston
 
 ### Infrastructure & DevOps
-- **Cloud Platforms**: AWS (ECS, S3, CloudFront, DynamoDB), Cloudflare Workers
+- **Cloud Platforms**: AWS (ECS, S3, CloudFront, DynamoDB), Cloudflare Workers, Fly.io
 - **Databases**: MySQL (aiomysql), Redis, OpenSearch, DynamoDB
 - **Containerization**: Docker, Docker Compose
 - **CI/CD**: AWS ECR, Terraform
@@ -27,10 +42,12 @@ I'm a full-stack engineer passionate about building scalable, maintainable syste
 - **Module Formats**: ESM, UMD
 - **Testing**: Vitest, Jest, pytest
 
-### AI & Automation
-- **LLM Integration**: LangChain, OpenAI, Anthropic, Google Gemini
+### AI & Agent Systems
+- **LLM Providers**: OpenAI, Anthropic, Google Gemini, DeepSeek, Mistral — unified abstraction layer across 5 providers
+- **Agent Patterns**: sub-agent delegation, tool calling, conversation compression, SWE-bench evaluation
 - **Browser Automation**: Playwright, Puppeteer
 - **Sandbox Environments**: E2B, Daytona, Docker, Fly.io
+- **Data**: Azure Databricks, Spark/Trino, natural language to SQL
 
 ## 🏗️ Architecture Expertise
 
@@ -55,6 +72,32 @@ I design and implement microservices following DDD principles with clear separat
 
 ## 💼 Key Projects
 
+### HappyCapy
+AI-native sandbox platform for developers. Built from zero to production in **19 days**:
+- 10,000 user sandboxes provisioned
+- 55 annual subscribers at $2,000/year
+- Full-stack: FastAPI backend, TypeScript SDK, multi-sandbox support (E2B, Daytona, Docker, Fly.io)
+
+### Data Analysis Agent (build-my-own-data-agent)
+Natural language to SQL agent for enterprise data platforms:
+- Built in **5 days** on the side as MVP
+- Supports Azure Databricks Genie + Spark/Trino dual environments
+- Context compression, confidence scoring, semantic layer
+- [Live demo](https://data-analysis-agent-warren.fly.dev/)
+
+**Technologies**: Python, FastAPI, LLM tool-calling, Fly.io
+
+### build-my-own-coding-agent (Open Source)
+An educational project demonstrating the evolution of AI coding agents from scratch to production:
+- **5 progressive versions** (V0→V5) showing the full journey: **33 → 9,266 lines** of code
+- **Sub-agent delegation** with 4 specialized agent types — task success rate lifted from **60% → 85%**
+- **Intelligent conversation compression** — 40-60% token reduction in long conversations
+- **Unified LLM abstraction** across 5 providers (OpenAI / Anthropic / Gemini / DeepSeek / Mistral)
+- **V5**: SWE-bench evaluation framework for objective agent quality measurement
+- 15 tools including file operations, search, system commands, and delegation
+
+**Technologies**: Python 3.7+, multi-provider LLM, Modular OOP Architecture
+
 ### trickle-backend
 A microservices platform built with FastAPI following DDD and TAO patterns. Features include:
 - Multiple domain services (auth, subs, proto, buzz, nge, link, space)
@@ -66,18 +109,6 @@ A microservices platform built with FastAPI following DDD and TAO patterns. Feat
 - AWS S3 for file storage and CloudFront CDN
 
 **Technologies**: Python 3.12+, FastAPI, aiomysql, Redis, OpenSearch, Pydantic, Poetry
-
-### general-agent
-An AI-powered task automation system with real-time WebSocket communication:
-- Long-running async task management
-- Multi-sandbox support (E2B, Daytona, Docker, Fly.io)
-- Real-time task state streaming via WebSocket
-- Multi-LLM support (GPT, Claude, Gemini)
-- Browser automation with Playwright
-- Distributed architecture on AWS ECS + ELB
-- Celery for background task processing
-
-**Technologies**: Python 3.11+, FastAPI, SocketIO, Celery, Redis, LangChain, Playwright, Poetry
 
 ### trickle-backend-sdk
 TypeScript/JavaScript SDK for Trickle Backend APIs:
@@ -91,39 +122,15 @@ TypeScript/JavaScript SDK for Trickle Backend APIs:
 
 **Technologies**: TypeScript, Vite, Vitest
 
-### trickle-slide/server
-Image processing and OCR service:
-- Multi-provider OCR support (Google Cloud Vision, Azure Computer Vision)
-- Image segmentation and extraction
-- Express.js REST API
-- Cloudflare Workers for edge computing
-- Sharp for image processing
-- Rate limiting and security middleware
-
-**Technologies**: TypeScript, Express.js, Google Cloud Vision, Azure Computer Vision, Sharp, Cloudflare Workers
-
-### my-coding-agents (Open Source)
-An educational project demonstrating the evolution of AI coding assistants from simple to complex:
-- **4 progressive versions** (v0-v4) showing 16,703% code growth journey (33 → 5,546 lines)
-- **Modular architecture** with event-driven design and sub-agent delegation system
-- **15 tools** including file operations, search, system commands, conversation management, and delegation
-- **Intelligent conversation compression** with 40-60% token reduction in long conversations
-- **Sub-agent delegation** with 4 specialized agent types and restricted tool sets
-- **Comprehensive testing** with 960+ lines of test coverage
-- **Complete documentation** showing architecture evolution and best practices
-- Demonstrates DDD principles, tool system design, and production-ready patterns
-
-**Technologies**: Python 3.7+, OpenRouter API, DeepSeek v3.2, Modular OOP Architecture
-
-
 ## 🎯 Core Competencies
 
+- **AI Product Building**: Shipping Agent systems from zero to production — HappyCapy in 19 days, Data Agent MVP in 5 days
 - **System Design**: Designing scalable microservices with proper separation of concerns
 - **API Development**: RESTful APIs with FastAPI and Express.js, WebSocket real-time communication
 - **Database Design**: Relational database design, async query optimization, search indexing
 - **SDK Development**: Creating developer-friendly SDKs with comprehensive type safety
-- **AI Integration**: Building AI-powered systems with LLM orchestration and tool calling
-- **DevOps**: Docker containerization, AWS cloud infrastructure, CI/CD pipelines
+- **AI Integration**: Building Agent systems with sub-agent delegation, tool calling, and LLM orchestration
+- **DevOps**: Docker containerization, AWS cloud infrastructure, Fly.io, CI/CD pipelines
 - **Code Quality**: Writing maintainable, testable code with proper error handling
 
 ## 📚 Development Philosophy
@@ -137,9 +144,9 @@ An educational project demonstrating the evolution of AI coding assistants from 
 
 ## 🔗 Links
 
-- GitHub: [@wupeng](https://github.com/wupeng)
-- Projects: Check out my repositories for detailed code examples and architecture decisions
+- GitHub: [@warren-wupeng](https://github.com/warren-wupeng)
+- Personal site: [about-me terminal](https://about-2xzap1qb1-warren-wupengs-projects.vercel.app)
 
 ---
 
-*Building robust, scalable systems with modern architecture patterns and best practices.*
+*Building AI products at every wave — 2023 ChatGPT · 2024 Coding · 2026 Agent.*
