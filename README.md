@@ -8,7 +8,8 @@ Logistics management grad → IT consultant (cross-national projects) → Accent
 
 - **HappyCapy** — AI-native sandbox platform: **19 days** after launch, **12K users**, **476 paid** (4% conversion); PH launch day: **2,446 signups + 70 paid** in 24h; [product](https://happycapy.ai) · [Product Hunt](https://www.producthunt.com/products/happycapy/launches) (7 launches, 5K+ total votes)
 - **build-my-own-coding-agent** — **6 versions** (V0→V6), **33 → 16K lines**; V4 sub-agent delegation **60%→85%** success rate, **40-60%** token savings; V6: **multi-agent autonomous team** (PM / Engineer / Strategist), 14 Issues, 67 tests; [open source](https://github.com/warren-wupeng/build-my-own-coding-agent)
-- **Data Analysis Agent MVP** — NL→SQL for enterprise data platforms (Databricks + Spark/Trino), built in **5 days** on the side; [live demo](https://data-analysis-agent-warren.fly.dev/) · [product proposal](https://warren-wupeng.github.io/lenovo-data-agent-proposal/)
+- **atos — Agent Team OS** — CLI + MCP Server for multi-agent coordination; **npm**: `@warren-wu/atos-cli`; **19 MCP tools**; works with any agent runtime (Claude Code, Cursor, custom); SQLite zero-config; [open source](https://github.com/warren-wupeng/agent-team-os) · [npm](https://www.npmjs.com/package/@warren-wu/atos-cli)
+- **Data Analysis Agent MVP** — NL→SQL for enterprise data platforms (Databricks + Spark/Trino), built in **5 days** on the side; [live demo](https://data-analysis-agent-warren.fly.dev/)
 - **3,800+** GitHub contributions in the past year
 
 ---
@@ -19,7 +20,7 @@ I build AI products at every inflection point:
 
 - **2023** — ChatGPT wave → AI chatbot & RAG image-note app (OpenAI API)
 - **2024** — Claude Sonnet 3.5 → Vibe Coding tool (websites for non-developers)
-- **2026** — Agent era → HappyCapy (12K users, 476 paid) + Data Analysis Agent MVP
+- **2026** — Agent era → HappyCapy (12K users, 476 paid) + atos (Agent Team OS, npm + MCP)
 
 I specialize in Python backend, TypeScript SDK, and AI-powered Agent systems. My work focuses on domain-driven design, event-driven architectures, and shipping production-grade AI products.
 
@@ -44,8 +45,15 @@ From 33 lines of bash to a 16K-line production system across 6 versions:
 | V5 | How to measure agent quality? | SWE-bench evaluation framework |
 | V6 | How do multiple agents work as a team? | Autonomous PM + Engineer + Strategist; 14 Issues, 67 tests, Git shared state + async mailbox + SOP-driven |
 
+### [atos — Agent Team OS](https://github.com/warren-wupeng/agent-team-os) — Open Source · [npm](https://www.npmjs.com/package/@warren-wu/atos-cli)
+CLI-first coordination tool for multi-AI-agent teams. Works with any agent runtime.
+- **19 MCP tools**: mail, task, SOP, config, team — native Claude Code/Desktop integration
+- **Architecture**: CLI + MCP Server · SQLite (zero-config) · FTS5 full-text search
+- **Design**: Messages + Tasks + SOPs (not graphs/DAGs/hierarchies)
+- Install: `npx @warren-wu/atos-cli`
+
 ### [Data Analysis Agent MVP](https://data-analysis-agent-warren.fly.dev/)
-NL→SQL agent for enterprise dual-environment data platforms (Azure Databricks + Spark/Trino). Built in 5 days. [Product proposal](https://warren-wupeng.github.io/lenovo-data-agent-proposal/).
+NL→SQL agent for enterprise dual-environment data platforms (Azure Databricks + Spark/Trino). Built in 5 days.
 
 ---
 
@@ -55,7 +63,7 @@ NL→SQL agent for enterprise dual-environment data platforms (Azure Databricks 
 
 **Infrastructure**: AWS (ECS, S3, DynamoDB), Cloudflare Workers, Fly.io · Docker · MySQL, Redis, OpenSearch
 
-**AI & Agent**: OpenAI / Anthropic / Gemini / DeepSeek / Mistral (unified abstraction) · Sub-agent delegation, tool calling, conversation compression · Playwright · E2B, Daytona
+**AI & Agent**: OpenAI / Anthropic / Gemini / DeepSeek / Mistral (unified abstraction) · MCP (Model Context Protocol) · Tool Calling · Sub-agent delegation · Multi-agent coordination (atos) · Playwright · E2B, Daytona
 
 **Data**: Azure Databricks, Spark/Trino, NL→SQL · Pydantic, Zod
 
@@ -63,9 +71,9 @@ NL→SQL agent for enterprise dual-environment data platforms (Azure Databricks 
 
 ## Links
 
-- [LinkedIn](https://linkedin.com/in/peng-wu) · [GitHub](https://github.com/warren-wupeng) · [小红书: 鹏哥聊编程](https://www.xiaohongshu.com/user/profile/597f56f282ec393545fd6896)
+- [LinkedIn](https://linkedin.com/in/warren-wupeng) · [GitHub](https://github.com/warren-wupeng) · [小红书: Warren和他的Agent团队](https://www.xiaohongshu.com/user/profile/597f56f282ec393545fd6896)
 - [Personal terminal site](https://warren-wupeng.github.io/about-me/)
-- [Interview strategy slides](https://warren-wupeng.github.io/warren-audio-briefings/interview-strategy-slides.html)
+- [atos on npm](https://www.npmjs.com/package/@warren-wu/atos-cli)
 
 ---
 
