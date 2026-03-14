@@ -9,6 +9,7 @@ Logistics management grad → IT consultant (cross-national projects) → Accent
 - **HappyCapy** — AI-native sandbox platform: **19 days** after launch, **12K users**, **476 paid** (4% conversion); PH launch day: **2,446 signups + 70 paid** in 24h; [product](https://happycapy.ai) · [Product Hunt](https://www.producthunt.com/products/happycapy/launches) (7 launches, 5K+ total votes)
 - **build-my-own-coding-agent** — **6 versions** (V0→V6), **33 → 16K lines**; V4 sub-agent delegation **60%→85%** success rate, **40-60%** token savings; V6: **multi-agent autonomous team** (PM / Engineer / Strategist), 14 Issues, 67 tests; [open source](https://github.com/warren-wupeng/build-my-own-coding-agent)
 - **atos — Agent Team OS** — CLI + MCP Server for multi-agent coordination; **npm**: `@warren-wu/atos-cli`; **19 MCP tools**; works with any agent runtime (Claude Code, Cursor, custom); SQLite zero-config; [open source](https://github.com/warren-wupeng/agent-team-os) · [npm](https://www.npmjs.com/package/@warren-wu/atos-cli)
+- **da2** — Python DDD + Event-Driven Architecture framework with Event Sourcing; Entity, Repository, UnitOfWork, MessageBus, EventStore, Snapshots; full async support; [open source](https://github.com/warren-wupeng/da2)
 - **Data Analysis Agent MVP** — NL→SQL for enterprise data platforms (Databricks + Spark/Trino), built in **5 days** on the side; [live demo](https://data-analysis-agent-warren.fly.dev/)
 - **3,800+** GitHub contributions in the past year
 
@@ -20,7 +21,7 @@ I build AI products at every inflection point:
 
 - **2023** — ChatGPT wave → AI chatbot & RAG image-note app (OpenAI API)
 - **2024** — Claude Sonnet 3.5 → Vibe Coding tool (websites for non-developers)
-- **2026** — Agent era → HappyCapy (12K users, 476 paid) + atos (Agent Team OS, npm + MCP)
+- **2026** — Agent era → HappyCapy (12K users, 476 paid) + atos (Agent Team OS, npm + MCP) + da2 (DDD/EDA framework)
 
 I specialize in Python backend, TypeScript SDK, and AI-powered Agent systems. My work focuses on domain-driven design, event-driven architectures, and shipping production-grade AI products.
 
@@ -52,6 +53,13 @@ CLI-first coordination tool for multi-AI-agent teams. Works with any agent runti
 - **Design**: Messages + Tasks + SOPs (not graphs/DAGs/hierarchies)
 - Install: `npx @warren-wu/atos-cli`
 
+### [da2](https://github.com/warren-wupeng/da2) — Open Source
+Lightweight Python framework for DDD + Event-Driven Architecture with Event Sourcing.
+- **Core**: Entity, Command, Event, Repository, UnitOfWork, MessageBus, Bootstrap DI
+- **Event Sourcing**: EventSourcedEntity, EventStore, Snapshots, optimistic concurrency
+- **Async-native**: Full async counterpart for every component
+- **Design**: Minimal building blocks, not a heavy framework — understand patterns by building them
+
 ### [Data Analysis Agent MVP](https://data-analysis-agent-warren.fly.dev/)
 NL→SQL agent for enterprise dual-environment data platforms (Azure Databricks + Spark/Trino). Built in 5 days.
 
@@ -59,7 +67,7 @@ NL→SQL agent for enterprise dual-environment data platforms (Azure Databricks 
 
 ## Tech Stack
 
-**Backend**: Python 3.11+, TypeScript, Go · FastAPI, Express.js · DDD, CQRS, Event Sourcing
+**Backend**: Python 3.11+, TypeScript, Go · FastAPI, Express.js · DDD, CQRS, Event Sourcing (da2)
 
 **Infrastructure**: AWS (ECS, S3, DynamoDB), Cloudflare Workers, Fly.io · Docker · MySQL, Redis, OpenSearch
 
