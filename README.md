@@ -6,7 +6,7 @@ Logistics management grad → IT consultant (cross-national projects) → Accent
 
 ## 2026 Highlights
 
-- **HappyCapy** — AI-native sandbox platform: **19 days** after launch, **12K users**, **476 paid** (4% conversion); PH launch day: **2,446 signups + 70 paid** in 24h; [product](https://happycapy.ai) · [Product Hunt](https://www.producthunt.com/products/happycapy/launches) (7 launches, 5K+ total votes)
+- **HappyCapy** — AI-native sandbox platform: **80K users** in first month; PH launch day: **2,446 signups + 70 paid** in 24h; [product](https://happycapy.ai) · [Product Hunt](https://www.producthunt.com/products/happycapy/launches) (7 launches, 5K+ total votes)
 - **build-my-own-coding-agent** — **6 versions** (V0→V6), **33 → 16K lines**; V4 sub-agent delegation **60%→85%** success rate, **40-60%** token savings; V6: **multi-agent autonomous team** (PM / Engineer / Strategist), 14 Issues, 67 tests; [open source](https://github.com/warren-wupeng/build-my-own-coding-agent)
 - **atos — Agent Team OS** — CLI + MCP Server for multi-agent coordination; **npm**: `@warren-wu/atos-cli`; **19 MCP tools**; works with any agent runtime (Claude Code, Cursor, custom); SQLite zero-config; [open source](https://github.com/warren-wupeng/agent-team-os) · [npm](https://www.npmjs.com/package/@warren-wu/atos-cli)
 - **da2** — Python DDD + Event-Driven Architecture framework with Event Sourcing; Entity, Repository, UnitOfWork, MessageBus, EventStore, Snapshots; full async support; [open source](https://github.com/warren-wupeng/da2)
@@ -21,7 +21,7 @@ I build AI products at every inflection point:
 
 - **2023** — ChatGPT wave → AI chatbot & RAG image-note app (OpenAI API)
 - **2024** — Claude Sonnet 3.5 → Vibe Coding tool (websites for non-developers)
-- **2026** — Agent era → HappyCapy (12K users, 476 paid) + atos (Agent Team OS, npm + MCP) + da2 (DDD/EDA framework)
+- **2026** — Agent era → HappyCapy (80K users) + atos (Agent Team OS, npm + MCP) + da2 (DDD/EDA framework)
 
 I specialize in Python backend, TypeScript SDK, and AI-powered Agent systems. My work focuses on domain-driven design, event-driven architectures, and shipping production-grade AI products.
 
@@ -31,7 +31,7 @@ I specialize in Python backend, TypeScript SDK, and AI-powered Agent systems. My
 
 ### [HappyCapy](https://happycapy.ai) — AI Sandbox Platform
 AI-native sandbox platform. I own the entire backend business layer: user registration, Stripe subscription billing, API key lifecycle management.
-- **19 days** post-launch: 12K users, 476 paid (4% CVR)
+- **80K users** in first month
 - PH launch day: 2,446 signups + 70 paid, **zero downtime**
 - Payment success rate 99.5%, Webhook P99 < 500ms
 
